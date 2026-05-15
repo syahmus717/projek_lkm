@@ -68,40 +68,41 @@
             margin-top: 10px;
         }
 
-        .materi-list details {
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 18px;
+            margin-top: 20px;
+        }
+
+        .materi-card {
+            display: block;
+            text-decoration: none;
+            color: inherit;
+            border-radius: 24px;
+            padding: 24px 22px;
+            background: linear-gradient(180deg, rgba(255,255,255,0.96), #eef6ff);
             border: 1px solid rgba(16, 66, 150, 0.16);
-            border-radius: 18px;
-            padding: 18px 20px;
-            margin-bottom: 16px;
-            background: linear-gradient(180deg, rgba(255,255,255,0.98), #eef6ff);
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            box-shadow: 0 16px 32px rgba(15, 45, 100, 0.08);
+            transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
         }
 
-        .materi-list details:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 18px 32px rgba(15, 45, 100, 0.08);
+        .materi-card:hover {
+            transform: translateY(-3px);
+            border-color: rgba(59, 130, 246, 0.4);
+            box-shadow: 0 22px 36px rgba(15, 45, 100, 0.12);
         }
 
-        .materi-list summary {
-            font-weight: 700;
-            cursor: pointer;
+        .materi-card h4 {
+            margin: 0 0 10px;
             color: #11306a;
-            outline: none;
+            font-size: 1.1rem;
         }
 
-        .materi-list p,
-        .materi-list h4,
-        .materi-list ol {
+        .materi-card p {
             color: #33487d;
-            margin: 10px 0 0;
-        }
-
-        .materi-list ol {
-            padding-left: 22px;
-        }
-
-        .materi-list li {
-            margin-bottom: 8px;
+            margin: 0;
+            line-height: 1.65;
         }
     </style>
 </head>
@@ -109,73 +110,49 @@
     <header>
         <h1>Kelompok 20</h1>
         <nav>
-            <a href="home.html">Home</a> |
-            <a href="materi.html">Materi</a> |
+            <a href="home.html">Home</a>
+            <a href="materi.html">Materi</a>
             <a href="about.html">About</a>
         </nav>
     </header>
     <main>
         <section class="materi">
             <div class="materi-list">
-                <h3>Materi Tersedia</h3>
-                <details>
-                    <summary>Materi 1: Analisis dan Pengembangan Masyarakat</summary>
-                    <p>Isi materi 1 akan ditampilkan di sini ketika judul diklik.</p>
-                </details>
-                <details>
-                    <summary>Materi 2: Dinamika Sosial dan Politik</summary>
-                    <p>Isi materi 2 akan ditampilkan di sini ketika judul diklik.</p>
-                </details>
-                <details>
-                    <summary>Materi 3: Manajemen Aksi</summary>
-                    <h4>Aksi</h4>
-                    <p>suatu model pernyataan sikap/penyaranan pendapat, opini atau tuntutan  yang dilakukan dengan jumlah massa tertentu dan teknik tertentu agar mendapat perhatian dari pihak yang dituju tampa birokrasi </p>
-                    <h4>tujuan</h4>
-                    <p>mengatur serangkaian tindakan agar berjalan efektif, efisien, dan mencapai hasil yang diinginkan.</p>
-                </details>
-                <details>
-                    <summary>Materi 4: Otoritas Informasi</summary>
-                    <p>Otoritas Informas adalah  kemampuan pemimpin dalam mengelola, mendistribusikan, kerahasian data untuk menjaga stabilitas dan kedaulatan organisasi</p>
-                    <h4>3 pillar utama Otoritas Informas</h4>
-                    <ol type="1"> 
-                        <li>struktur (membangung hierarki informasi)</li>
-                        <li>validasi (membangun alur verifikasi data)</li>
-                        <li>hak akases (penerapan RBAC (ROLE BASE ACCESS CONTROL))</li>
-                    </ol>
-                </details>
-                <details>
-                    <summary>Materi 5: Retorika</summary>
-                    <p>Retorika adalah seni berbicara dan menulis secara efektif dan persuasif, yang bertujuan untuk mempengaruhi audiens melalui bahasa yang tepat dan strategis.</p>
-                    <h4>Prinsip Dasar Retorika</h4>
-                    <ol type="1"> 
-                        <li>Ethos (Kredibilitas/Karakter) </li>
-                        <p>Ethos berkaitan dengan kredibilitas, kualitas , dan karakter pembicara.</p>
-                        <li>Pathos (Emosi/Empati) </li>
-                        <p>Pathos adalah cara penyampaian yang berfokus kepada perasaan audiens atau seni berbicara yang menyentuh emosi, perasaan, dan nilai-nilai audiens.</p>
-                        <li>Logos (Logika/Bukti)</li> 
-                        <p>Logos adalah sebuah argument yang masuk akal dan bernasis bukti yang berkaitan dengan logika, penalaran, argumen, dan bukti nyata.</p>
-                    </ol>
-                    <h4>teknik berbicara</h4>
-                    <ol type="1"> 
-                        <li>Story Telling</li> 
-                        <li>Bagasa Tabah dan Intonasi</li> 
-                        <li>struktur yang jelas </li>
-                        <li>data dari contok konkrit</li>
-                        <li>latihan</li> 
-                    </ol>
-                </details>
-                <details>
-                    <summary>Materi 6: Analisis Organisasi</summary>
-                    <p>Isi materi 6 akan ditampilkan di sini ketika judul diklik.</p>
-                </details>
-                <details>
-                    <summary>Materi 7: Pengembangan dan Pembangunan Organisasi</summary>
-                    <p>Isi materi 7 akan ditampilkan di sini ketika judul diklik.</p>
-                </details>
-                <details>
-                    <summary>Materi 8: kekeluargaan</summary>
-                    <p>Isi materi 8 akan ditampilkan di sini ketika judul diklik.</p>
-                </details>
+                <h3>Materi LKM 2026</h3>
+                <div class="card-grid">
+                    <a class="materi-card" href="materi1.html">
+                        <h4>Materi 1: Analisis dan Pengembangan Masyarakat</h4>
+                        <p>Pelajari landasan analisis masyarakat dan pendekatan pengembangan yang berkelanjutan.</p>
+                    </a>
+                    <a class="materi-card" href="materi2.html">
+                        <h4>Materi 2: Dinamika Sosial dan Politik</h4>
+                        <p>Mengulas hubungan sosial dan faktor politik di dalam masyarakat modern.</p>
+                    </a>
+                    <a class="materi-card" href="materi3.html">
+                        <h4>Materi 3: Manajemen Aksi</h4>
+                        <p>Belajar strategi perencanaan dan pelaksanaan aksi agar berjalan efektif dan terarah.</p>
+                    </a>
+                    <a class="materi-card" href="materi4.html">
+                        <h4>Materi 4: Otoritas Informasi</h4>
+                        <p>Memahami pengelolaan informasi, kerahasiaan, dan kontrol akses dalam organisasi.</p>
+                    </a>
+                    <a class="materi-card" href="materi5.html">
+                        <h4>Materi 5: Retorika</h4>
+                        <p>Pelajari seni berbicara persuasif dan teknik persuasi yang efektif.</p>
+                    </a>
+                    <a class="materi-card" href="materi6.html">
+                        <h4>Materi 6: Analisis Organisasi</h4>
+                        <p>Analisis struktur organisasi dan peran elemen utama dalam operasional organisasi.</p>
+                    </a>
+                    <a class="materi-card" href="materi7.html">
+                        <h4>Materi 7: Pengembangan dan Pembangunan Organisasi</h4>
+                        <p>Membahas langkah-langkah untuk memperkuat organisasi dan mendukung pertumbuhan.</p>
+                    </a>
+                    <a class="materi-card" href="materi8.html">
+                        <h4>Materi 8: Kekeluargaan</h4>
+                        <p>Memperkuat nilai kekeluargaan untuk menjaga kebersamaan dan solidaritas kelompok.</p>
+                    </a>
+                </div>
             </div>
         </section>
     </main>
