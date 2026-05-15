@@ -6,74 +6,102 @@
     <title>Materi - Kelompok 20</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
             line-height: 1.6;
+            background: linear-gradient(180deg, #eef6ff 0%, #d9e8fd 45%, #c7dbfb 100%);
+            color: #102d5f;
         }
 
         header {
             text-align: center;
-            padding: 20px;
-            border-bottom: 1px solid #000;
+            padding: 28px 20px;
+            background: linear-gradient(135deg, #1a56db, #4f8bff);
+            color: white;
+            box-shadow: 0 8px 28px rgba(0, 0, 0, 0.14);
         }
 
         header h1 {
             margin: 0;
+            font-size: 2rem;
+        }
+
+        nav {
+            margin-top: 12px;
+        }
+
+        nav a {
+            color: rgba(255,255,255,0.92);
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: 600;
+            transition: color 0.25s ease;
+        }
+
+        nav a:hover {
+            color: #d7e8ff;
         }
 
         main {
-            padding: 20px;
+            padding: 40px 20px 60px;
+            max-width: 1080px;
+            margin: 0 auto;
         }
 
         .materi {
-            margin-top: 40px;
+            background: rgba(255,255,255,0.95);
+            border-radius: 30px;
+            padding: 36px 32px;
+            box-shadow: 0 24px 60px rgba(15, 45, 100, 0.12);
+            border: 1px solid rgba(255,255,255,0.85);
         }
 
         .materi h2,
         .materi-list h3 {
             text-align: center;
             margin-bottom: 16px;
+            color: #0f2366;
         }
 
-        .upload-form {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 20px;
-        }
-
-        .upload-form label {
-            min-width: 150px;
-        }
-
-        .upload-form input[type="file"] {
-            padding: 6px;
-        }
-
-        .upload-form button {
-            padding: 10px 18px;
-            border: 1px solid #000;
-            background: transparent;
-            cursor: pointer;
+        .materi-list {
+            margin-top: 10px;
         }
 
         .materi-list details {
-            border: 1px solid #000;
-            border-radius: 6px;
-            padding: 12px;
-            margin-bottom: 12px;
+            border: 1px solid rgba(16, 66, 150, 0.16);
+            border-radius: 18px;
+            padding: 18px 20px;
+            margin-bottom: 16px;
+            background: linear-gradient(180deg, rgba(255,255,255,0.98), #eef6ff);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .materi-list details:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 18px 32px rgba(15, 45, 100, 0.08);
         }
 
         .materi-list summary {
-            font-weight: bold;
+            font-weight: 700;
             cursor: pointer;
+            color: #11306a;
+            outline: none;
         }
 
-        .materi-list p {
+        .materi-list p,
+        .materi-list h4,
+        .materi-list ol {
+            color: #33487d;
             margin: 10px 0 0;
+        }
+
+        .materi-list ol {
+            padding-left: 22px;
+        }
+
+        .materi-list li {
+            margin-bottom: 8px;
         }
     </style>
 </head>

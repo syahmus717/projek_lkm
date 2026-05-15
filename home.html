@@ -6,67 +6,64 @@
     <title>Homepage - Kelompok 20</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
             line-height: 1.6;
+            background: linear-gradient(180deg, #f5f9ff 0%, #d9e8ff 50%, #c3defd 100%);
+            color: #0f2366;
         }
 
         header {
             text-align: center;
-            padding: 20px;
-            border-bottom: 1px solid #000;
+            padding: 24px 20px;
+            background: linear-gradient(135deg, rgba(15,35,102,0.95), rgba(70,130,255,0.85));
+            color: white;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
         }
 
         header h1 {
             margin: 0;
+            font-size: 2rem;
+            letter-spacing: 0.04em;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: rgba(255,255,255,0.9);
+            text-decoration: none;
+            font-weight: 600;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #e0f2ff;
         }
 
         main {
-            padding: 20px;
-        }
-
-        .members h2 {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .member-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-        }
-
-        .member {
-            border: 1px solid #000;
-            padding: 10px;
-            text-align: center;
-        }
-
-        .member img {
-            width: 100px;
-            height: 100px;
-            object-fit: cover;
-            border: 1px solid #000;
-        }
-
-        .member h3 {
-            margin: 10px 0;
-        }
-
-        .member p {
-            margin: 0;
+            padding: 40px 20px 60px;
+            max-width: 1100px;
+            margin: 0 auto;
         }
 
         .home-content {
             text-align: center;
             margin-top: 60px;
+            padding: 40px 30px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 28px;
+            box-shadow: 0 24px 60px rgba(0, 48, 128, 0.12);
+            border: 1px solid rgba(255,255,255,0.8);
         }
 
         .home-content h2 {
-            font-size: 36px;
+            font-size: clamp(2.5rem, 4vw, 3.6rem);
             margin-bottom: 40px;
-            color: #333;
+            color: #0f2366;
         }
 
         .button-container {
@@ -78,18 +75,27 @@
 
         .btn {
             display: inline-block;
-            padding: 15px 30px;
-            background-color: #007bff;
+            padding: 16px 34px;
+            background: linear-gradient(135deg, #3b82f6, #60a5fa);
             color: white;
             text-decoration: none;
-            border-radius: 5px;
-            font-size: 16px;
-            font-weight: bold;
-            transition: background-color 0.3s;
+            border-radius: 999px;
+            font-size: 1rem;
+            font-weight: 700;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+            box-shadow: 0 14px 28px rgba(59, 130, 246, 0.22);
         }
 
         .btn:hover {
-            background-color: #0056b3;
+            transform: translateY(-2px);
+            box-shadow: 0 18px 30px rgba(59, 130, 246, 0.28);
+        }
+
+        .footer-note {
+            text-align: center;
+            margin-top: 40px;
+            color: #3a5f8f;
+            opacity: 0.9;
         }
     </style>
 </head>
